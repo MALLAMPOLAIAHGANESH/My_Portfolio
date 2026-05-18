@@ -2,7 +2,7 @@
 
 A stunning, premium 3D interactive portfolio landing page built using HTML, CSS, and modern JavaScript with GPU-accelerated **Three.js WebGL** visual effects.
 
-🔗 **Live Deployment Link:** [https://mallampolaiahganesh.github.io/My_Portfolio/](https://mallampolaiahganesh.github.io/My_Portfolio/)
+🔗 **Live Deployment Link:** https://my-portfolio-mu-six-36.vercel.app/
 
 ---
 
