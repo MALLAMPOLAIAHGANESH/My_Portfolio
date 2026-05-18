@@ -789,8 +789,20 @@ canvas {
 
 /* ==================== RESPONSIVE DESIGN ==================== */
 @media (max-width: 768px) {
+  .slides-container {
+    scroll-snap-type: none; /* Disable snappy scrolling on mobile/tablet to prevent layout cutting off on tall slides */
+  }
+
+  .slide {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+    min-height: auto;
+    height: auto;
+    padding: 80px 20px 40px 20px; /* Leave padding on top and bottom */
+  }
+
   .slide-nav {
-    right: 20px;
+    right: 15px;
   }
 
   .nav-dots {
@@ -808,8 +820,17 @@ canvas {
     margin: -2px;
   }
 
+  .hero {
+    gap: 20px;
+  }
+
   .hero h1 {
-    font-size: 36px;
+    font-size: 34px;
+    word-break: keep-all;
+  }
+
+  .hero h2 {
+    font-size: 20px;
   }
 
   .hero h3 {
@@ -817,25 +838,41 @@ canvas {
   }
 
   .social-links {
-    gap: 12px;
+    gap: 10px;
   }
 
   .social-links a {
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .content-section {
+    padding: 25px 20px;
+  }
+
+  .content-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
   }
 
   .content-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .content-section h2 {
-    font-size: 32px;
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .profile-frame {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
 
   .timeline::before {
@@ -843,7 +880,7 @@ canvas {
   }
 
   .timeline-item {
-    padding-left: 80px;
+    padding-left: 60px;
   }
 
   .timeline-marker {
@@ -855,38 +892,61 @@ canvas {
 
 @media (max-width: 480px) {
   .slide {
-    padding: 40px 20px;
+    padding: 60px 15px 30px 15px;
   }
 
   .slide-nav {
-    display: none;
+    display: none; /* Hide floating navigation dot bar on extremely small devices */
   }
 
   .hero h1 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero h3 {
+    font-size: 14px;
   }
 
   .content-section {
-    padding: 20px;
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .content-section h2 {
+    font-size: 24px;
   }
 
   .social-links {
     flex-direction: column;
     width: 100%;
+    gap: 8px;
   }
 
   .social-links a {
     width: 100%;
     text-align: center;
+    padding: 12px;
   }
 
   .contact-links {
     flex-direction: column;
+    gap: 10px;
   }
 
   .contact-btn {
     width: 100%;
     justify-content: center;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .contact-info {
+    padding: 20px 15px;
+    width: 100%;
   }
 }
 
