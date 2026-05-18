@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MALLAM POLAIAH GANESH - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <canvas id="canvas"></canvas>
+
+    <!-- Navigation Sidebar -->
+    <nav class="slide-nav">
+      <div class="nav-dots">
+        <button class="nav-dot active" data-slide="0" title="Home"></button>
+        <button class="nav-dot" data-slide="1" title="About"></button>
+        <button class="nav-dot" data-slide="2" title="Skills"></button>
+        <button class="nav-dot" data-slide="3" title="Experience"></button>
+        <button class="nav-dot" data-slide="4" title="Projects"></button>
+        <button class="nav-dot" data-slide="5" title="Contact"></button>
+      </div>
+    </nav>
+
+    <!-- Slides Container -->
+    <div class="slides-container">
+
+      <!-- Slide 0: Hero -->
+      <div class="slide active" data-slide-index="0">
+        <div class="hero">
+          <div class="profile-container">
+            <div class="profile-frame" id="profileFrame" title="Click to add photo">
+              <span class="placeholder-text" id="placeholderText" style="display: none;">Add Photo</span>
+              <img id="profileImage" src="m1.jpg" alt="Profile">
+              <input type="file" id="photoInput" accept="image/*">
+            </div>
+          </div>
+          <h2>IAM</h2>
+          <h1>MALLAM POLAIAH GANESH</h1>
+          <h3>Ai-Data Science&Analyst | Machine Learning Enthusiast</h3>
+          <div class="social-links">
+            <a target="_blank" href="https://www.linkedin.com/in/mallam-polaiah-ganesh-b33748218/"
+              class="social-link linkedin">LinkedIn</a>
+            <a target="_blank" href="https://github.com/MALLAMPOLAIAHGANESH" class="social-link github">GitHub</a>
+            <a href="mailto:polaiahmallam8@gmail.com" class="social-link email">Gmail</a>
+          </div>
+          <div class="scroll-hint">↓</div>
+        </div>
+      </div>
+
+      <!-- Slide 1: About -->
+      <div class="slide" data-slide-index="1">
+        <div class="content-section about-section">
+          <h2>About Me</h2>
+          <div class="content-grid">
+            <div class="content-item">
+              <h3>Professional Summary</h3>
+              <p>AI & Data Science undergraduate with strong foundations in machine learning, data analysis, and
+                predictive modeling. Experienced in building end-to-end data-driven projects using Python, SQL,
+                Scikit-learn, and visualization tools to extract actionable insights from real-world datasets. Skilled
+                in exploratory data analysis (EDA), feature engineering, model evaluation, and deploying analytical
+                solutions through interactive web applications. Passionate about Artificial Intelligence, Generative AI,
+                and scalable data systems, with a continuous focus on solving practical business problems through
+                data-centric approaches.</p>
+            </div>
+            <div class="content-item">
+              <h3>Core Expertise</h3>
+              <ul>
+                <li>Data Analysis &amp; Exploratory Data Analysis (EDA)</li>
+                <li>Supervised Learning — Classification &amp; Regression</li>
+                <li>Feature Engineering &amp; Model Evaluation</li>
+                <li>Data Visualization &amp; Insights Extraction</li>
+                <li>Predictive Modeling &amp; Statistical Analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Skills -->
+      <div class="slide" data-slide-index="2">
+        <div class="content-section skills-section">
+          <h2>Skills &amp; Expertise</h2>
+          <div class="skills-grid">
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+              <h3>🖥️ Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag lang-tag">Python</span>
+                <span class="skill-tag lang-tag">HTML</span>
+                <span class="skill-tag lang-tag">C</span>
+                <span class="skill-tag lang-tag">Java (Basic)</span>
+                <span class="skill-tag lang-tag">SQL</span>
+              </div>
+            </div>
+
+            <!-- Spoken Languages -->
+            <div class="skill-category">
+              <h3>🌐 Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag spoken-tag">English</span>
+                <span class="skill-tag spoken-tag">Telugu</span>
+              </div>
+            </div>
+
+            <!-- Core Expertise -->
+            <div class="skill-category expertise-wide">
+              <h3>🎯 Core Expertise</h3>
+              <div class="expertise-list">
+                <div class="expertise-item"><span class="expertise-icon">📊</span><span>Data Analysis</span></div>
+                <div class="expertise-item"><span class="expertise-icon">🔍</span><span>Exploratory Data Analysis
+                    (EDA)</span></div>
+                <div class="expertise-item"><span class="expertise-icon">🤖</span><span>Supervised Learning</span></div>
+                <div class="expertise-item"><span class="expertise-icon">📈</span><span>Classification &amp;
+                    Regression</span></div>
+                <div class="expertise-item"><span class="expertise-icon">⚙️</span><span>Feature Engineering</span></div>
+                <div class="expertise-item"><span class="expertise-icon">✅</span><span>Model Evaluation</span></div>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-category">
+              <h3>🤝 Soft Skills</h3>
+              <div class="soft-skills-grid">
+                <div class="soft-skill-pill"><span>💡</span> Problem Solving</div>
+                <div class="soft-skill-pill"><span>🧠</span> Analytical Thinking</div>
+                <div class="soft-skill-pill"><span>💬</span> Communication</div>
+                <div class="soft-skill-pill"><span>👥</span> Team Collaboration</div>
+                <div class="soft-skill-pill"><span>🔄</span> Adaptability</div>
+              </div>
+            </div>
+
+            <!-- Data Libraries -->
+            <div class="skill-category">
+              <h3>📦 Data Libraries</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Scikit-learn</span>
+              </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="skill-category">
+              <h3>🛠️ Tools &amp; Platforms</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Jupyter Notebook</span>
+                <span class="skill-tag">Git/GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Power BI</span>
+              </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+              <h3>🗄️ Databases</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">SQLite</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Experience -->
+      <div class="slide" data-slide-index="3">
+        <div class="content-section experience-section">
+          <h2>Education & Achievements</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>B.Tech (Computer Science & Data Science)</h3>
+                <p class="role-details">Madanapalle Institute of Technology and Science (MITS) | 2024-2028</p>
+                <ul>
+                  <li>CGPA: 7.5</li>
+                  <li>Focus on Data Science & Analytics</li>
+                  <li>Pursuing advanced ML & Data Analysis techniques</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Intermediate (VOC - Civil Engineering)</h3>
+                <p class="role-details">SKR Govt Jr College, Gudur | 2022-2024</p>
+                <ul>
+                  <li>Marks: 857</li>
+                  <li>Data Science using Python (Gen AI Leadership)</li>
+                  <li>Power BI Workshop & Google Skill Badge 22</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>🏆 Achievements & Certifications</h3>
+                <p class="role-details">Recognition & Professional Development</p>
+                <ul>
+                  <li>Understanding Incubation and Entrepreneurship (Score 90%)</li>
+                  <li>Google Skill Badge 22 (Gen AI, Big Query)</li>
+                  <li>Data Science using Python (Gen AI Leadership)</li>
+                  <li>Power BI Workshop Certificate</li>
+                  <li>Basic Computer Organization Certification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Projects -->
+      <div class="slide" data-slide-index="4">
+        <div class="content-section projects-section">
+          <h2>Featured Projects</h2>
+          <div class="projects-grid">
+
+            <!-- Project 1: Titanic -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Titanic Survival Analysis</h3>
+                <div class="project-badges">
+                  <a href="https://mallampolaiahganesh.github.io/titanic-analysis/" target="_blank"
+                    class="project-link live-badge">🔴 Live ↗</a>
+                  <a href="https://github.com/MALLAMPOLAIAHGANESH" target="_blank" class="project-link">️
+                  </a>
+                </div>
+              </div>
+              <p>Performed data cleaning, preprocessing, and exploratory data analysis to identify key survival
+                factorss.
+                Built an interactive dashboard for visual insights.</p>
+              <div class="tech-stack">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+                <span>EDA</span>
+              </div>
+            </div>
+
+            <!-- Project 2: ML Classification -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3>ML Classification Models</h3>
+                <div class="project-badges">
+                  <a href="https://github.com/MALLAMPOLAIAHGANESH/codesoft" target="_blank" class="project-link">GitHub
+                    ↗</a>
+                </div>
+              </div>
+              <p>Built and evaluated supervised learning models (IMDB sentiment, Loan Default, Iris classification).
+                Applied feature engineering, cross-validation, and hyperparameter tuning.</p>
+              <div class="tech-stack">
+                <span>Scikit-learn</span>
+                <span>NumPy</span>
+                <span>Python</span>
+                <span>Supervised Learning</span>
+              </div>
+            </div>
+
+            <!-- Project 3: Stock Market Pipeline -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Stock Market Data Pipeline</h3>
+                <div class="project-badges">
+                  <a href="https://github.com/MALLAMPOLAIAHGANESH" target="_blank" class="project-link">❤️ Working
+                    GitHub ↗</a>
+                </div>
+              </div>
+              <p>Built a real-time stock data pipeline using yfinance and SQLite. Integrated Power BI for live chart
+                visualization and trend analytics with automated data refresh.</p>
+              <div class="tech-stack">
+                <span>Python</span>
+                <span>yfinance</span>
+                <span>SQLite</span>
+                <span>Power BI</span>
+                <span>FastAPI</span>
+              </div>
+            </div>
+
+            <!-- Project 4: Music4U -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Music4U Streaming App</h3>
+                <div class="project-badges">
+                  <a href="https://github.com/MALLAMPOLAIAHGANESH/Music4U" target="_blank"
+                    class="project-link live-badge">WORKING..↗</a>
+                  <a href="https://github.com/MALLAMPOLAIAHGANESH" target="_blank" class="project-link">GitHub ↗</a>
+                </div>
+              </div>
+              <p>Full-stack music streaming platform with Spotify API integration, JWT authentication, real-time
+                analytics, FastAPI backend, React Native mobile app, and Vite web frontend.</p>
+              <div class="tech-stack">
+                <span>FastAPI</span>
+                <span>React Native</span>
+                <span>Spotify API</span>
+                <span>PostgreSQL</span>
+                <span>JWT Auth</span>
+              </div>
+            </div>
+
+            <!-- Project 5: Portfolio Dashboard -->
+            <div class="project-card">
+              <div class="project-header">
+                <h3>3D Portfolio Dashboard</h3>
+                <div class="project-badges">
+                  <a href="https://mallampolaiahganesh.github.io/" target="_blank" class="project-link live-badge">🔴
+                    Live ↗</a>
+                </div>
+              </div>
+              <p>Premium interactive portfolio with GPU-accelerated 3D cursor animations, multi-slide snap navigation,
+                glassmorphism design, and full mobile responsiveness.</p>
+              <div class="tech-stack">
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+                <span>Three.js</span>
+                <span>WebGL</span>
+                <span>Glassmorphism</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Contact -->
+      <div class="slide" data-slide-index="5">
+        <div class="content-section contact-section">
+          <h2>Get In Touch</h2>
+          <div class="contact-content">
+            <p>Let's collaborate on data-driven projects and create impactful solutions together!</p>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/mallam-polaiah-ganesh-b33748218/" target="_blank"
+                class="contact-btn linkedin-btn">
+                <span>💼</span> LinkedIn
+              </a>
+              <a href="https://github.com/MALLAMPOLAIAHGANESH" target="_blank" class="contact-btn github-btn">
+                <span>💻</span> GitHub
+              </a>
+              <a href="mailto:polaiahmallam8@gmail.com" class="contact-btn email-btn">
+                <span>✉️</span> Email
+              </a>
+            </div>
+            <div class="contact-info">
+              <p><strong>Email:</strong> polaiahmallam8@gmail.com</p>
+              <p><strong>Location:</strong> Chennappanaidupeta, Tirupati, India</p>
+              <p><strong>Phone:</strong> +91-7013707164</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
